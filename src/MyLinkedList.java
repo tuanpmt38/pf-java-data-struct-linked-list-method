@@ -107,7 +107,7 @@ public class MyLinkedList<E> {
         else if (index == 0) return removeFirst();
         else if (index == size - 1) return removeLast();
         else {
-            Node<E> previous = head.next;
+            Node<E> previous = head;
             for (int i = 1; i < index; i++) {
                 previous = previous.next;
             }
